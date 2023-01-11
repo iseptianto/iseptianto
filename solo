@@ -84,7 +84,7 @@
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">3D Modeling, 3D Texture, Content Creator</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://docs.google.com/uc?export=download&id=1qolII6hORkizdNfMEfsx6fA7GdAlHIXU" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="" class="btn btn-outline-light mr-5">Download CV</a>
                         <button type="button" class="btn-play" data-toggle="modal"
                             data-src="https://www.youtube.com/channel/UCbse3pTN-NbxNshQwBMEN8A" data-target="#videoModal">
                             <span></span>
@@ -117,7 +117,6 @@
               <p>My name is Indra Septianto, I am 24 years old, and I am an Industrial Designer from Indonesia. I am currently working as a freelancer 3d modeler, But I can develop different tasks for the activity.
 			 <br>One year experience in modeling and rendering using Blender and similar software (Canva, Cinema 4D(Basic) & Photoshop). as you can see below, quality, attention to detail, and realism are what I aim for in my projects</br></p>
               <ul class="theme-list">
-                <li class="fg-dark"><b>From:</b> Solo, Indonesia</li>
                 <li class="fg-dark"><b>Lives In:</b> Solo, Indonesia</li>
                 <li class="fg-dark"><b>Age:</b> 24</li>
                 <li class="fg-dark"><b>Gender:</b> Male</li>
