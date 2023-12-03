@@ -53,6 +53,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+/* Penggunaan @font-face dengan font-display */
+@font-face {
+  font-family: 'Roboto';
+  src: url('path/to/roboto-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -63,6 +72,7 @@ body {
   text-align: left;
   background-color: #ffffff;
 }
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
