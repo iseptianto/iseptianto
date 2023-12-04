@@ -54,17 +54,17 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 /* Penggunaan @font-face dengan font-display */
+
+
 @font-face {
-  font-family: 'Roboto';
-  src: url('path/to/roboto-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'roboto';
+  src: url('path/font.woff2') format('woff2');
+  font-display: swap; /* atau fallback atau optional */
 }
 
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+	 margin: 0;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -72,6 +72,7 @@ body {
   text-align: left;
   background-color: #ffffff;
 }
+
 
 
 [tabindex="-1"]:focus:not(:focus-visible) {
