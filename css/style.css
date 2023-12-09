@@ -5,6 +5,16 @@
     --light: #FAFAFB;
     --dark: #12141D;
 }
+body {
+    margin: 0;
+ font-family: 'Roboto', sans-serif;
+ font-size: 1rem;
+ font-weight: 400;
+ line-height: 1.5;
+ color: #6c757d;
+ text-align: left;
+ background-color: #ffffff;
+}
 
 .back-to-top {
     position: fixed;
