@@ -1,506 +1,398 @@
-/********** Template CSS **********/
-:root {
-    --primary: #6244C5;
-    --secondary: #FFC448;
-    --light: #FAFAFB;
-    --dark: #12141D;
+:root{
+    --primary:#6244C5;
+    --secondary:#FFC448;
+    --light:#FAFAFB;
+    --dark:#12141D
 }
-body {
-    margin: 0;
- font-family: 'Roboto', sans-serif;
- font-size: 1rem;
- font-weight: 400;
- line-height: 1.5;
- color: #6c757d;
- text-align: left;
- background-color: #ffffff;
+body{
+    margin:0;
+    font-family:'Roboto',sans-serif;
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#6c757d;
+    text-align:left;
+    background-color:#fff
 }
-
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
+.back-to-top{
+    position:fixed;
+    display:none;
+    right:45px;
+    bottom:45px;
+    z-index:99
 }
-
-.my-6 {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+.my-6{
+    margin-top:6rem;
+    margin-bottom:6rem
 }
-
-.py-6 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+.py-6{
+    padding-top:6rem;
+    padding-bottom:6rem
 }
-
-
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+#spinner{
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .5s ease-out,visibility 0s linear .5s;
+    z-index:99999
 }
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
+#spinner.show{
+    transition:opacity .5s ease-out,visibility 0s linear 0s;
+    visibility:visible;
+    opacity:1
 }
-
-
-/*** Button ***/
-.btn {
-    font-weight: 500;
-    transition: .5s;
+.btn{
+    font-weight:500;
+    transition:.5s
 }
-
-.btn.btn-primary,
-.btn.btn-secondary {
-    color: #FFFFFF;
+.btn.btn-primary,.btn.btn-secondary{
+    color:#FFF
 }
-
-.btn-square {
-    width: 38px;
-    height: 38px;
+.btn-square{
+    width:38px;
+    height:38px
 }
-
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
+.btn-sm-square{
+    width:32px;
+    height:32px
 }
-
-
-.btn-square,
-.btn-sm-square,
-
-
-/*** Navbar ***/
-    .collapse.navbar-collapse ul.navbar-nav {
-        display: flex;
-        justify-content: center;
+.btn-square,.btn-sm-square,.collapse.navbar-collapse ul.navbar-nav{
+    display:flex;
+    justify-content:center
+}
+.collapse.navbar-collapse ul.navbar-nav li.nav-item{
+    margin:0 5px
+}
+.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link{
+    color:#000;
+    font-weight:500
+}
+.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active{
+    color:#0bceaf
+}
+.btn-outline-primary{
+    color:#007bff;
+    border-color:#007bff
+}
+.btn-outline-primary:hover{
+    background-color:#007bff;
+    color:#fff
+}
+.btn-outline-primary.d-none.d-lg-block{
+    display:block
+}
+@media (max-width:767px){
+    .collapse.navbar-collapse ul.navbar-nav{
+        flex-direction:column;
+        align-items:center
     }
-    
-    .collapse.navbar-collapse ul.navbar-nav li.nav-item {
-        margin: 0 5px;
+    .collapse.navbar-collapse ul.navbar-nav li.nav-item{
+        margin:5px 0
     }
-    
-    .collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
-        color: #000;
-        font-weight: 500;
+    .collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active{
+        color:#000
     }
-    
-    .collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active {
-        color: #0bceaf;
-    }
-    
-    .btn-outline-primary {
-        color: #007bff;
-        border-color: #007bff;
-    }
-    
-    .btn-outline-primary:hover {
-        background-color: #007bff;
-        color: #fff;
-    }
-    
-    .btn-outline-primary.d-none.d-lg-block {
-        display: block;
-    }
-    
-    /* Tambahan style untuk mengatur tampilan di versi mobile */
-    @media (max-width: 767px) {
-        .collapse.navbar-collapse ul.navbar-nav {
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .collapse.navbar-collapse ul.navbar-nav li.nav-item {
-            margin: 5px 0;
-        }
-        
-        .collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active {
-            color: #000;
-        }
-        
-        .btn-outline-primary.d-none.d-lg-block {
-            display: none;
-        }
-    }
-
-.navbar.fixed-top {
-    display: none;
-    transition: .5s;
-}
-
-.navbar .navbar-nav .nav-link {
-    padding: 20px 15px;
-    color: var(--dark);
-    font-size: 18px;
-    font-weight: 600;
-    outline: none;
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
-}
-
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
-        padding: 10px 0;
+    .btn-outline-primary.d-none.d-lg-block{
+        display:none
     }
 }
-
-
-/*** Header ***/
-
-
-.typed-cursor {
-    font-size: 30px;
-    color: var(--dark);
+.navbar.fixed-top{
+    display:none;
+    transition:.5s
 }
-
-.btn-play {
-    position: relative;
-    display: block;
-    box-sizing: content-box;
-    width: 16px;
-    height: 26px;
-    border-radius: 100%;
-    border: none;
-    outline: none !important;
-    padding: 18px 20px 20px 28px;
-    background: var(--primary);
+.navbar .navbar-nav .nav-link{
+    padding:20px 15px;
+    color:var(--dark);
+    font-size:18px;
+    font-weight:600;
+    outline:none
 }
-
-.btn-play:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: var(--primary);
-    border-radius: 100%;
-    animation: pulse-border 1500ms ease-out infinite;
+.navbar .navbar-nav .nav-link:hover,.navbar .navbar-nav .nav-link.active{
+    color:var(--primary)
 }
-
-.btn-play:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: #FFFFFF;
-    border-radius: 100%;
-    transition: all 200ms;
-}
-
-.btn-play span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    width: 0;
-    height: 0;
-    left: -1px;
-    border-left: 16px solid var(--primary);
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-}
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-        opacity: 0;
+@media (max-width:991.98px){
+    .navbar .navbar-nav .nav-link{
+        padding:10px 0
     }
 }
-
-.modal-video .modal-dialog {
-    position: relative;
-    max-width: 800px;
-    margin: 60px auto 0 auto;
+.typed-cursor{
+    font-size:30px;
+    color:var(--dark)
 }
-
-.modal-video .modal-body {
-    position: relative;
-    padding: 0px;
+.btn-play{
+    position:relative;
+    display:block;
+    box-sizing:content-box;
+    width:16px;
+    height:26px;
+    border-radius:100%;
+    border:none;
+    outline:none!important;
+    padding:18px 20px 20px 28px;
+    background:var(--primary)
 }
-
-.modal-video .close {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 0px;
-    top: -30px;
-    z-index: 999;
-    font-size: 30px;
-    font-weight: normal;
-    color: #FFFFFF;
-    background: #000000;
-    opacity: 1;
+.btn-play:before{
+    content:"";
+    position:absolute;
+    z-index:0;
+    left:50%;
+    top:50%;
+    transform:translateX(-50%) translateY(-50%);
+    display:block;
+    width:60px;
+    height:60px;
+    background:var(--primary);
+    border-radius:100%;
+    animation:pulse-border 1500ms ease-out infinite
 }
-
-
-/*** About ***/
-#about .years .display-1 {
-    font-size: 10rem;
-    line-height: 9rem;
+.btn-play:after{
+    content:"";
+    position:absolute;
+    z-index:1;
+    left:50%;
+    top:50%;
+    transform:translateX(-50%) translateY(-50%);
+    display:block;
+    width:60px;
+    height:60px;
+    background:#FFF;
+    border-radius:100%;
+    transition:all 200ms
 }
-
-#about .years h5 {
-    letter-spacing: 30px;
-    margin-right: -30px;
+.btn-play span{
+    display:block;
+    position:relative;
+    z-index:3;
+    width:0;
+    height:0;
+    left:-1px;
+    border-left:16px solid var(--primary);
+    border-top:11px solid transparent;
+    border-bottom:11px solid transparent
 }
-
-
-/*** Skills ***/
-#skill .progress {
-    height: 5px;
-    border-radius: 5px;
+@keyframes pulse-border{
+    0%{
+        transform:translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity:1
+    }
+    100%{
+        transform:translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        opacity:0
+    }
 }
-
-#skill .progress .progress-bar {
-    width: 0px;
-    border-radius: 5px;
-    transition: 3s;
+.modal-video .modal-dialog{
+    position:relative;
+    max-width:800px;
+    margin:60px auto 0 auto
 }
-
-#skill .nav-pills .nav-link {
-    color: var(--dark);
+.modal-video .modal-body{
+    position:relative;
+    padding:0
 }
-
-#skill .nav-pills .nav-link.active {
-    color: #FFFFFF;
+.modal-video .close{
+    position:absolute;
+    width:30px;
+    height:30px;
+    right:0;
+    top:-30px;
+    z-index:999;
+    font-size:30px;
+    font-weight:400;
+    color:#FFF;
+    background:#000;
+    opacity:1
 }
-
-#skill .tab-content hr {
-    width: 30px;
+#about .years .display-1{
+    font-size:10rem;
+    line-height:9rem
 }
-
-
-/*** Service ***/
-.service-item .bg-icon {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/bg-icon.png) center center no-repeat;
-    background-size: cover;
+#about .years h5{
+    letter-spacing:30px;
+    margin-right:-30px
 }
-
-
-/*** Project Portfolio ***/
-.gallery {
-  text-align: center;
+#skill .progress{
+    height:5px;
+    border-radius:5px
 }
-
-.filter {
-  margin-bottom: 5px;
-  display: inline-block;
+#skill .progress .progress-bar{
+    width:0;
+    border-radius:5px;
+    transition:3s
 }
-
-.mx-3 {
-  padding: 1px 1px;
-  margin: 3px;
-  border: none;
-  border-radius: 3px;
-  background-color: #fff;
-  cursor: pointer;
-  display: inline-block; /* Menambahkan inline block */
+#skill .nav-pills .nav-link{
+    color:var(--dark)
 }
-
-.mx-3.active {
-  color: var(--primary);
-  border-color: var(--primary);
+#skill .nav-pills .nav-link.active{
+    color:#FFF
 }
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+#skill .tab-content hr{
+    width:30px
 }
-
-.image {
-  position: relative;
-  margin: 10px;
-  max-width: 100%;
-  width: 20%;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.service-item .bg-icon{
+    width:100px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:url(../img/bg-icon.png) center center no-repeat;
+    background-size:cover
 }
-
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.gallery{
+    text-align:center
 }
-
-
-
-
-.portfolio-btn {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s;
+.filter{
+    margin-bottom:5px;
+    display:inline-block
 }
-
-.image:hover .portfolio-btn {
-  opacity: 1;
+.mx-3{
+    padding:1px 1px;
+    margin:3px;
+    border:none;
+    border-radius:3px;
+    background-color:#fff;
+    cursor:pointer;
+    display:inline-block
 }
-
-
-.portfolio-btn a {
-  color: #fff;
-  display: inline-block;
-  margin-right: 5px;
-  padding: 5px;
-  text-decoration: none;
+.mx-3.active{
+    color:var(--primary);
+    border-color:var(--primary)
 }
-
-
-.portfolio-btn a i {
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.images{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center
 }
-
-.portfolio-btn a:hover {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
+.image{
+    position:relative;
+    margin:10px;
+    max-width:100%;
+    width:20%;
+    overflow:hidden;
+    border-radius:5px;
+    box-shadow:0 2px 4px rgba(0,0,0,.2)
 }
-
-Dengan menambahkan elemen gambar (<img>) dan elemen tombol (<div class="portfolio-btn">) ke dalam elemen .image, Anda dapat mengimplementasikan fitur yang diinginkan ke dalam halaman Anda. CSS yang disediakan akan mengatur tampilan elemen-elemen tersebut, termasuk memperlihatkan tombol ketika gambar dihover. Anda dapat menyesuaikan properti CSS sesuai dengan kebutuhan desain Anda.
-
-
-.loadmore {
-  margin-top: 20px;
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:contain
 }
-
-.read-less {
-  display: none;
+.portfolio-btn{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:rgba(0,0,0,.5);
+    padding:10px;
+    opacity:0;
+    transition:opacity 0.3s
 }
-
-.text-right {
-  text-align: right;
+.image:hover .portfolio-btn{
+    opacity:1
 }
-
-.text-center {
-  text-align: center;
+.portfolio-btn a{
+    color:#fff;
+    display:inline-block;
+    margin-right:5px;
+    padding:5px;
+    text-decoration:none
 }
-
-/*** Testimonial ***/
-.testimonial-left,
-.testimonial-right {
-    position: relative;
+.portfolio-btn a i{
+    font-size:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center
 }
-
-.testimonial-left img,
-.testimonial-right img {
-    position: absolute;
-    padding: 5px;
-    border: 1px solid var(--secondary);
-    border-radius: 70px;
+.portfolio-btn a:hover{
+    color:#fff;
+    background-color:rgba(255,255,255,.3)
 }
-
-.testimonial-left img:nth-child(1),
-.testimonial-right img:nth-child(3) {
-    width: 70px;
-    height: 70px;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+Dengan menambahkan elemen gambar (<img>) dan elemen tombol (<div class="portfolio-btn">) ke dalam elemen .image,Anda dapat mengimplementasikan fitur yang diinginkan ke dalam halaman Anda. CSS yang disediakan akan mengatur tampilan elemen-elemen tersebut,termasuk memperlihatkan tombol ketika gambar dihover. Anda dapat menyesuaikan properti CSS sesuai dengan kebutuhan desain Anda. .loadmore{
+    margin-top:20px
 }
-
-.testimonial-left img:nth-child(2),
-.testimonial-right img:nth-child(2) {
-    width: 60px;
-    height: 60px;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+.read-less{
+    display:none
 }
-
-.testimonial-left img:nth-child(3),
-.testimonial-right img:nth-child(1) {
-    width: 50px;
-    height: 50px;
-    bottom: 10%;
-    right: 10%;
+.text-right{
+    text-align:right
 }
-
-.testimonial-carousel .owl-item img {
-    width: 120px;
-    height: 120px;
+.text-center{
+    text-align:center
 }
-
-.testimonial-carousel .testimonial-icon {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
-    border: 1px solid var(--secondary);
-    border-radius: 60px;
+.testimonial-left,.testimonial-right{
+    position:relative
 }
-
-.testimonial-carousel .owl-dots {
-    height: 40px;
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.testimonial-left img,.testimonial-right img{
+    position:absolute;
+    padding:5px;
+    border:1px solid var(--secondary);
+    border-radius:70px
 }
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 30px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 2px solid var(--secondary);
-    border-radius: 30px;
-    transition: .5s;
+.testimonial-left img:nth-child(1),.testimonial-right img:nth-child(3){
+    width:70px;
+    height:70px;
+    top:10%;
+    left:50%;
+    transform:translateX(-50%)
 }
-
-.testimonial-carousel .owl-dot::after {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    top: 5px;
-    left: 5px;
-    border-radius: 16px;
-    background: var(--secondary);
-    transition: .5s;
+.testimonial-left img:nth-child(2),.testimonial-right img:nth-child(2){
+    width:60px;
+    height:60px;
+    top:50%;
+    left:10%;
+    transform:translateY(-50%)
 }
-
-.testimonial-carousel .owl-dot.active::after {
-    background: var(--primary);
+.testimonial-left img:nth-child(3),.testimonial-right img:nth-child(1){
+    width:50px;
+    height:50px;
+    bottom:10%;
+    right:10%
+}
+.testimonial-carousel .owl-item img{
+    width:120px;
+    height:120px
+}
+.testimonial-carousel .testimonial-icon{
+    position:absolute;
+    width:40px;
+    height:40px;
+    left:50%;
+    bottom:-15px;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#FFF;
+    border:1px solid var(--secondary);
+    border-radius:60px
+}
+.testimonial-carousel .owl-dots{
+    height:40px;
+    margin-top:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+.testimonial-carousel .owl-dot{
+    position:relative;
+    display:inline-block;
+    margin:0 5px;
+    width:30px;
+    height:30px;
+    background:#FFF;
+    border:2px solid var(--secondary);
+    border-radius:30px;
+    transition:.5s
+}
+.testimonial-carousel .owl-dot::after{
+    position:absolute;
+    content:"";
+    width:16px;
+    height:16px;
+    top:5px;
+    left:5px;
+    border-radius:16px;
+    background:var(--secondary);
+    transition:.5s
+}
+.testimonial-carousel .owl-dot.active::after{
+    background:var(--primary)
 }
