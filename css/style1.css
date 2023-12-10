@@ -4117,6 +4117,7 @@ input[type="button"].btn-block {
   display: block;
 }
 
+/* Navbar styling */
 .navbar {
   position: relative;
   display: flex;
@@ -4127,15 +4128,20 @@ input[type="button"].btn-block {
   margin-bottom: 0; /* Menambahkan aturan ini untuk menghindari margin bawaan */
 }
 
-
+/* Container styling */
 .navbar .container,
-.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
+.navbar .container-fluid,
+.navbar .container-sm,
+.navbar .container-md,
+.navbar .container-lg,
+.navbar .container-xl {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Navbar brand styling */
 .navbar-brand {
   display: inline-block;
   padding: 0.3125rem 1rem; /* Menggabungkan padding-top dan padding-bottom menjadi satu properti */
@@ -4146,11 +4152,13 @@ input[type="button"].btn-block {
   margin-bottom: 0;
 }
 
-
-.navbar-brand:hover, .navbar-brand:focus {
+/* Navbar brand hover and focus styling */
+.navbar-brand:hover,
+.navbar-brand:focus {
   text-decoration: none;
 }
 
+/* Navbar navigation styling */
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -4159,16 +4167,19 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+/* Navbar navigation link styling */
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
 }
 
+/* Navbar dropdown menu styling */
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
 }
 
+/* Navbar text styling */
 .navbar-text {
   display: inline-block;
   padding-top: 0.5rem;
