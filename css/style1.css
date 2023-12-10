@@ -4124,7 +4124,9 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  margin-bottom: 0; /* Menambahkan aturan ini untuk menghindari margin bawaan */
 }
+
 
 .navbar .container,
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
@@ -4136,13 +4138,13 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding: 0.3125rem 1rem; /* Menggabungkan padding-top dan padding-bottom menjadi satu properti */
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
+
 
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
